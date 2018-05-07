@@ -10,6 +10,7 @@ namespace Powitanie
     {
         static void Main(string[] args)
         {
+            Console.Out.WriteLine("Pierwsze kroki w githubie!");
         }
     }
 }
