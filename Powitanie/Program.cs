@@ -18,7 +18,18 @@ namespace Powitanie
             {
                 Console.WriteLine("Witaj, " + item);
             }
+            Console.Write("\nWpisz swoje imię: "); //używamy \n zamiast kolejnej linijki kodu z Console.WriteLine();
+            string name = Console.ReadLine();
+            Console.Write("Wpisz ile masz lat: ");
+            int wiek = int.Parse(Console.ReadLine()); //nie da się wpisać tu inta bezpośrednio, trzeba sparsować do inta - int.Parse
 
+            if (wiek >= 18)
+            {
+                Console.WriteLine("\nMożesz napić się temerskiej żytniej :)"); 
+            }
+            else Console.WriteLine("Pij mleko albo wodę z kałuży!");
+
+            Console.ReadKey(); //program nie zakończy się bez naciśnięcia jakiegoś klawisza
         }
     }
 }
