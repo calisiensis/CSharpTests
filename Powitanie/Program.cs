@@ -18,18 +18,35 @@ namespace Powitanie
             {
                 Console.WriteLine("Witaj, " + item);
             }
+            for (; ; ) // pętla na nieskończone wykonywanie się programu
+            { 
             Console.Write("\nWpisz swoje imię: "); //używamy \n zamiast kolejnej linijki kodu z Console.WriteLine();
             string name = Console.ReadLine();
+            Console.WriteLine("Witaj, " + name);
             Console.Write("Wpisz ile masz lat: ");
-            int wiek = int.Parse(Console.ReadLine()); //nie da się wpisać tu inta bezpośrednio, trzeba sparsować do inta - int.Parse
+            int wiek;
+            bool result = int.TryParse(Console.ReadLine(), out wiek); //nie da się wpisać tu inta bezpośrednio, trzeba sparsować do inta - int.Parse, ale żeby zabezpieczyć się przed wpisaniem litery zamiast liczby, dajemy TryParse
 
             if (wiek >= 18)
             {
-                Console.WriteLine("\nMożesz napić się temerskiej żytniej :)"); 
+                Console.ForegroundColor = ConsoleColor.Green; // ustawianie kolorowych wydruków
+                Console.WriteLine("\nMożesz napić się temerskiej żytniej, takiej chłodnej, prosto z piwniczki :)");
             }
-            else Console.WriteLine("Pij mleko albo wodę z kałuży!");
+            else if (result == false) // sprawdzamy parsowanie literek do wieku, który parsowany jest do zera
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Nie ma takie wprowadzania wieku, znikaj stąd!");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Pij mleko albo wodę z kałuży!");
+            }
+                Console.ReadKey(); // program nie zakończy się bez naciśnięcia jakiegoś klawisza
+                Console.Clear(); // czyszczenie ekranu
+                Console.ResetColor(); // przywraca pierwotne ustawienia koloru
 
-            Console.ReadKey(); //program nie zakończy się bez naciśnięcia jakiegoś klawisza
+        }
         }
     }
 }
