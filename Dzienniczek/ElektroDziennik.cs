@@ -8,8 +8,11 @@ namespace Dzienniczek
 {
     class ElektroDziennik
     {
-
-        List<float> oceny = new List<float>();
+        public ElektroDziennik()
+        {
+            oceny = new List<float>();
+        }
+        List<float> oceny; // = new List<float>(); to byśmy dali, gdyby nie konstruktor powyżej
 
         public void DodawanieOcen(float ocena)
         {
