@@ -40,6 +40,13 @@ namespace InnyDzienniczek
             Console.WriteLine("Minimalna ocena dla dzienniczka nr 2: " + statystyki.minOcena);
             Console.WriteLine("");
 
+            //  wywołanie pól static: nazwa klasy, kropka i pole
+           
+            Console.WriteLine(Diary.maxOcena);
+            Console.WriteLine(Diary.minOcena);
+            Console.WriteLine(Diary.Licznik); // pokazuje ile mamy dzienniczków
+            Console.WriteLine(dzienniczek.Licznik2); // pokazuje ile mamy instancji klasy, czyli zawsze będzie 1, bo dla każdego obiektu licznik jest zawsze inny
+
         }
     }
 }
