@@ -17,6 +17,8 @@ namespace InnyDzienniczek
 
         private List<float> oceny;
 
+        public string Name; // wyjątkowo zmienną dajemy z dużej litery
+
         // Static - daje dostęp do pól i metod bez tworzenia instancji klasy
         public static float minOcena = 0;
         public static float maxOcena = 10;
