@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Speech.Synthesis;
+
 
 namespace InnyDzienniczek
 {
@@ -101,6 +103,35 @@ namespace InnyDzienniczek
             int cyfra3; // nie trzeba inicjalizować, bo z metody inkrementacja3 wyjdzie 66
             inkrementacja3(out cyfra3);
             Console.WriteLine(cyfra3);
+
+            // porównywanie zmiennych
+
+            string name1 = "Eredin";
+            string name2 = "eredin";
+
+            bool areEqual = name1.Equals(name2, StringComparison.CurrentCultureIgnoreCase);
+            Console.WriteLine(areEqual);
+
+            // przycinanie stringów z białych znaków
+
+            string name3 = "  Jaskier  ";
+            name3 = name3.Trim();
+            Console.WriteLine(name3);
+
+            // zabawy z datami
+
+            DateTime date = DateTime.Now;
+            Console.WriteLine(date);
+
+            DateTime date2 = new DateTime(2018, 06, 01);
+            date2 = date2.AddHours(48);
+            Console.WriteLine(date2);
+
+
+            SpeechSynthesizer synt = new SpeechSynthesizer();
+            synt.Speak("Jestem gadającym komputerem!");
+            Console.ReadKey();
+              
 
 
         }
