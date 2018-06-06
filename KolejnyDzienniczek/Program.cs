@@ -26,6 +26,10 @@ namespace KolejnyDzienniczek
             WypiszRezultat("Minimalna ocena", (long)statystyki.minOcena); // jak wyżej
             WypiszRezultat("Minimalna ocena", (long)statystyki.minOcena, 1); // uruchomienie szóstej metody (wcześniej czwartej)
             WypiszRezultat("Średnia ocena", statystyki.sredniaOcena, 3, 5, 7, 8, 9); // uruchomienie metody z "params"
+            Console.WriteLine("");
+
+            dzienniczek.Name = "Dzienniczek Imleritha";
+            Console.WriteLine(dzienniczek.Name);
         }
         static void WypiszRezultat(string opis, float ocena)
         {

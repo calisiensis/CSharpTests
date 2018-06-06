@@ -17,7 +17,23 @@ namespace KolejnyDzienniczek
 
         private List<float> oceny;
 
-        public string Name; // wyjątkowo zmienną dajemy z dużej litery
+        private string _name;
+
+        public string Name // wyjątkowo zmienną dajemy z dużej litery
+        { // dodajemy właściwości
+            get
+            {
+                return _name.ToUpper(); // zwracanie nazwy dużymi literami
+            } 
+            set
+            {
+                if(!string.IsNullOrEmpty(value)) // sprawdzamy, czy wartość jest nullem albo pusta
+                {
+                    _name = value;
+                }
+            }
+        }
+        
 
         // Static - daje dostęp do pól i metod bez tworzenia instancji klasy
         public static float minOcena = 0;
