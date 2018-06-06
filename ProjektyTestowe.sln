@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DziennikoweZabawy", "Dzienn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnyDzienniczek", "InnyDzienniczek\InnyDzienniczek.csproj", "{60D05349-9D53-4D98-9AB8-A65165C20E0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KolejnyDzienniczek", "KolejnyDzienniczek\KolejnyDzienniczek.csproj", "{2D07C5E0-DA3D-4D41-9F15-FEDC2C65EA86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{60D05349-9D53-4D98-9AB8-A65165C20E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60D05349-9D53-4D98-9AB8-A65165C20E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60D05349-9D53-4D98-9AB8-A65165C20E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D07C5E0-DA3D-4D41-9F15-FEDC2C65EA86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D07C5E0-DA3D-4D41-9F15-FEDC2C65EA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D07C5E0-DA3D-4D41-9F15-FEDC2C65EA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D07C5E0-DA3D-4D41-9F15-FEDC2C65EA86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
